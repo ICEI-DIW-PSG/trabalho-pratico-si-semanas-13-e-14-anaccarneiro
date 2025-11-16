@@ -1,18 +1,46 @@
 {
-  "usuarios": [
+  "cidades": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": 1,
+      "nome": "Ouro Preto",
+      "foto": "./ouro_preto.JPG",
+      "resumo": "Ouro Preto é uma cidade histórica localizada em Minas Gerais, Brasil...",
+      "sobre": "Ouro Preto é um dos maiores símbolos do período colonial brasileiro..."
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "id": 2,
+      "nome": "Sabará",
+      "foto": "./sabará.webp",
+      "resumo": "Sabará é uma cidade histórica de Minas Gerais, Brasil...",
+      "sobre": "Sabará é uma das cidades históricas mais antigas de Minas Gerais..."
+    },
+    {
+      "id": 3,
+      "nome": "Serro",
+      "foto": "./serro.avif",
+      "resumo": "Serro é uma cidade histórica de Minas Gerais...",
+      "sobre": "Serro é uma das cidades mais tradicionais e charmosas de Minas Gerais..."
+    },
+    {
+      "id": "e3dd",
+      "nome": "Campinas",
+      "foto": "campinas.jpg",
+      "resumo": "Cidade de São Paulo",
+      "sobre": "Cidade\n"
+    },
+    {
+      "id": "f633",
+      "nome": "Guarulhos",
+      "foto": "guarulhos.jpg",
+      "resumo": "Cidade de SP",
+      "sobre": "Guarulhos\n"
+    },
+    {
+      "id": "08fb",
+      "nome": "Bela Vista",
+      "foto": "bela-vista.jpg",
+      "resumo": "Cidade de MG",
+      "sobre": "Bela Vista, cidade histórica\n"
     }
   ]
 }
