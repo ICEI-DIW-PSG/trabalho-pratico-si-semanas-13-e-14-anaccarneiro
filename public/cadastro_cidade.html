@@ -6,6 +6,7 @@
 <title>Cadastro de Cidade</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body class="bg-light d-flex flex-column min-vh-100">
 
 <header class="d-flex justify-content-between align-items-center px-4 bg-warning-subtle" style="height:100px;">
@@ -13,6 +14,7 @@
   <nav>
     <ul class="nav">
       <li class="nav-item"><a class="nav-link fw-bold fs-5 text-warning" href="index.html">Cidades</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold fs-5 text-warning" href="visualizacao.html">Visualização</a></li>
     </ul>
   </nav>
 </header>
@@ -20,26 +22,38 @@
 <main class="flex-grow-1 d-flex justify-content-center align-items-center my-5">
   <div class="p-4 rounded bg-light w-100 shadow" style="max-width: 600px;">
     <h2 class="text-center mb-4 text-dark">Cadastro de Cidade</h2>
+
     <form id="formCidade">
+      
       <div class="mb-3">
         <label for="nome" class="form-label">Nome:</label>
-        <input type="text" id="nome" name="nome" class="form-control" required>
+        <input type="text" id="nome" class="form-control" required>
       </div>
+
+      <div class="mb-3">
+        <label for="estado" class="form-label">Estado (UF):</label>
+        <input type="text" id="estado" class="form-control" placeholder="Ex: MG, SP, RJ" required>
+      </div>
+
       <div class="mb-3">
         <label for="foto" class="form-label">URL da Foto:</label>
-        <input type="text" id="foto" name="foto" class="form-control" required>
+        <input type="text" id="foto" class="form-control" required>
       </div>
+
       <div class="mb-3">
         <label for="resumo" class="form-label">Resumo:</label>
-        <textarea id="resumo" name="resumo" class="form-control" required></textarea>
+        <textarea id="resumo" class="form-control" required></textarea>
       </div>
+
       <div class="mb-3">
         <label for="sobre" class="form-label">Descrição Detalhada:</label>
-        <textarea id="sobre" name="sobre" class="form-control" required></textarea>
+        <textarea id="sobre" class="form-control" required></textarea>
       </div>
+
       <div class="d-grid">
         <button type="submit" class="btn btn-warning text-light fw-bold">Salvar</button>
       </div>
+
     </form>
   </div>
 </main>
@@ -53,17 +67,18 @@
   const form = document.getElementById('formCidade');
   form.addEventListener('submit', salvarCidade);
 
-  // Preencher formulário caso seja edição
   const id = new URLSearchParams(window.location.search).get("id");
-  if(id){
-      fetch(`http://localhost:3000/cidades/${id}`)
-        .then(res => res.json())
-        .then(cidade => {
-          document.getElementById("nome").value = cidade.nome;
-          document.getElementById("foto").value = cidade.foto;
-          document.getElementById("resumo").value = cidade.resumo;
-          document.getElementById("sobre").value = cidade.sobre;
-        });
+
+  if (id) {
+    fetch(`http://localhost:3000/cidades/${id}`)
+      .then(res => res.json())
+      .then(cidade => {
+        document.getElementById("nome").value = cidade.nome;
+        document.getElementById("estado").value = cidade.estado;
+        document.getElementById("foto").value = cidade.foto;
+        document.getElementById("resumo").value = cidade.resumo;
+        document.getElementById("sobre").value = cidade.sobre;
+      });
   }
 </script>
 

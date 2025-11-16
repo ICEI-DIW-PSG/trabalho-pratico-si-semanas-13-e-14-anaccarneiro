@@ -3,44 +3,34 @@
     {
       "id": 1,
       "nome": "Ouro Preto",
+      "estado": "MG",
       "foto": "./ouro_preto.JPG",
-      "resumo": "Ouro Preto é uma cidade histórica localizada em Minas Gerais, Brasil...",
+      "resumo": "Ouro Preto é uma cidade histórica localizada em Minas Gerais...",
       "sobre": "Ouro Preto é um dos maiores símbolos do período colonial brasileiro..."
     },
     {
       "id": 2,
       "nome": "Sabará",
+      "estado": "MG",
       "foto": "./sabará.webp",
-      "resumo": "Sabará é uma cidade histórica de Minas Gerais, Brasil...",
-      "sobre": "Sabará é uma das cidades históricas mais antigas de Minas Gerais..."
+      "resumo": "Sabará é uma das cidades históricas mais antigas de Minas Gerais...",
+      "sobre": "Cidade colonial com cultura e gastronomia marcantes."
     },
     {
       "id": 3,
       "nome": "Serro",
+      "estado": "MG",
       "foto": "./serro.avif",
-      "resumo": "Serro é uma cidade histórica de Minas Gerais...",
-      "sobre": "Serro é uma das cidades mais tradicionais e charmosas de Minas Gerais..."
+      "resumo": "Serro é uma cidade histórica de Minas Gerais.",
+      "sobre": "Conhecida pela tradição do queijo artesanal."
     },
     {
-      "id": "e3dd",
-      "nome": "Campinas",
-      "foto": "campinas.jpg",
-      "resumo": "Cidade de São Paulo",
-      "sobre": "Cidade\n"
-    },
-    {
-      "id": "f633",
-      "nome": "Guarulhos",
-      "foto": "guarulhos.jpg",
-      "resumo": "Cidade de SP",
-      "sobre": "Guarulhos\n"
-    },
-    {
-      "id": "08fb",
-      "nome": "Bela Vista",
-      "foto": "bela-vista.jpg",
-      "resumo": "Cidade de MG",
-      "sobre": "Bela Vista, cidade histórica\n"
+      "id": "6f1a",
+      "nome": "Guarapari",
+      "estado": "ES",
+      "foto": "guarapari.jpg",
+      "resumo": "Cidade do ES",
+      "sobre": "Guarapari ES"
     }
   ]
 }
