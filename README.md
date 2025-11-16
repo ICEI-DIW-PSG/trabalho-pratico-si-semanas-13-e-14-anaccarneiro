@@ -9,14 +9,14 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Ana Clara Castro Carneiro
+- Matricula: 898743
+- Proposta de projeto escolhida: Lugares e Experiências
+- Breve descrição sobre seu projeto: Site que apresenta algumas das cidades históricas de Minas Gerais que já visitei.
 
 **Print da tela com a implementação**
 
-<< Coloque aqui uma breve explicação da implementação feita nessa etapa>>
+Foi criada uma nova página de visualização dinâmica utilizando Chart.js, que lê os dados cadastrados pelo CRUD e gera automaticamente um gráfico de barras mostrando a quantidade de cidades por estado. Para isso, adicionei o novo campo estado no formulário, atualizei o banco de dados, ajustei o app.js para salvar e exibir esse campo e implementei a função montarGrafico(), que processa os dados da API e renderiza o gráfico. A visualização agora responde em tempo real às alterações feitas no cadastro, edição ou exclusão de cidades.
 
 ![alt text](image.png)
 
